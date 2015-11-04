@@ -1,0 +1,19 @@
+<html ng-app="nodeRocks">
+<head>
+	<meta charset="UTF-8">
+	<title>Node Rocks!!!</title>
+</head>
+<body ng-controller="MainController as vm">
+	<h1>Seriously better than .NET</h1>
+	{{vm.test}}
+	
+	<form ng-submit="vm.register()">
+		<input type="email" ng-model="vm.newUser.username" />
+		<input type="password" ng-model="vm.newUser.password" />
+		<button type="submit">Create User</button>
+	</form>
+	
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
